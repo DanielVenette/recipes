@@ -1,55 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Recipe Collection</title>
+  <title>My Recipes</title>
   <style>
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
-      background: #fafafa;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 0.75rem 0;
-    }
-    a {
-      display: block;
-      background: white;
-      border: 1px solid #eee;
-      border-radius: 12px;
-      padding: 16px;
-      text-decoration: none;
-      font-size: 1.2rem;
-      color: #222;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      transition: all 0.2s ease;
-    }
-    a:hover {
-      background: #f0f8ff;
-      transform: translateY(-2px);
-    }
+    body { font-family: Arial, sans-serif; max-width: 1000px; margin: 40px auto; padding: 20px; background: #fafafa; }
+    h1 { text-align: center; color: #222; margin-bottom: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(1, minmax(content-box, 200px)); gap: 20px; }
+    .card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.05); transition: all 0.2s ease; }
+    .card:hover { background: #f0f8ff; transform: translateY(-2px); }
+    .card a { color: #222; text-decoration: none; font-size: 1.1rem; display: inline-block; }
   </style>
 </head>
 <body>
   <h1>My Recipes</h1>
-  <ul>
-    <li><a href="turkey-quinoa-veggie-bake.html">Turkey & Quinoa Veggie Bake</a></li>
-    <li><a href="turkey-sweet-potato-chili.html">Turkey & Sweet Potato Chili</a></li>
-    <li><a href="chili.html">Chili</a></li>
-    <li><a href="berry-yogurt-power-bowl.html">Berry Yogurt Power Bowl</a></li>
-    <li><a href="mediterranean-chickpea-wraps.html">Mediterranean Chickpea Wraps</a></li>
-  </ul>
+  <div class="grid">
+    <div class="card"><a href="turkey-quinoa-veggie-bake.html">Turkey & Quinoa Veggie Bake</a></div>
+    <div class="card"><a href="turkey-sweet-potato-chili.html">Turkey & Sweet Potato Chili</a></div>
+    <div class="card"><a href="chili.html">Chili</a></div>
+    <div class="card"><a href="berry-yogurt-power-bowl.html">Berry Yogurt Power Bowl</a></div>
+    <div class="card"><a href="mediterranean-chickpea-wraps.html">Mediterranean Chickpea Wraps</a></div>
+    <div class="card"><a href="spinach-cheese-egg-muffins.html">Spinach Cheese Egg Muffins</a></div>
+    <div class="card"><a href="blueberry-almond-brain-boost-smoothie.html">Blueberry Almond Brain-Boost Smoothie</a></div>
+  </div>
 </body>
 </html>
